@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+/* Header */
+
+.header {
+    color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.headline {
+    margin-top: 50px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-height: 100%;
+}
+
+.headline img {
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+.headline h1 {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.headline h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.headline p {
+    font-size: 1.8rem;
+    margin: 1rem 0 4rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    color: #fff;
+    margin: 1rem auto;
+    padding: 0.7rem 2rem;
+    border-radius: 30em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    box-shadow: 1px 1px 12px #000000;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transform: translateX(-101%);
+    transition: all .3s ease;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: #272727;
+    transition: all .3s ease;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+/* End of Header ~ Start of Content*/
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: auto 2rem 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 7rem;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin: 1rem 15% 7rem;
+}
+
+.content p:nth-child(3) {
+    text-align: justify;
+}
+
+.content p:nth-child(4) {
+    text-align: justify;
+}
+
+.content p:nth-child(5) {
+    text-align: center;
+}
+
+.content img {
+    width: 20%;
+    margin-top: -2rem;
+}
+
+.content .leftimg {
+    float: left;
+    padding-right: 4rem;
+}
+
+.content .rightimg {
+    float: right;
+    padding-left: 4rem;
+}
+
+.content span {
+    animation: blink 2s infinite;
+}
+
+.footer {
+    width: 100%;
+    margin: 2rem auto 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.social {
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.social ul {
+    margin: auto;
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+.social li:last-child {
+    margin-right: 0;
+}
+
+.social li a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    border: 1px solid white;
+    opacity: .4;
+}
+
+.social li a:hover {
+    opacity: 1;
+}
+
+.social .facebook {
+    background: url(https://dimarcopizza.rs/img/facebook.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.social .twitter {
+    background: url(https://dimarcopizza.rs/img/twitter.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.social .mail {
+    background: url(https://dimarcopizza.rs/img/mail.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+footer {
+    font-size: 1.2rem;
+}
+
+@media(max-height: 900px) {
+    .header {
+        height: 1000px;
+    }
+}
+
+@media(max-width: 900px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(img/mobile_background.jpg);
+    }
+
+    .header {
+        width: 100%;
+        height: 900px;
+    }
+
+    .headline {
+        margin-top: 50px;
+        overflow-y: hidden;
+        max-height: 100%;
+    }
+
+    .headline img {
+        width: 200px;
+    }
+
+    .headline h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .headline h2 {
+        font-size: 3rem;
+    }
+
+    .headline p {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        padding-top: 10%;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+        margin: auto 10% 6rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        margin: 1rem 10% 3rem;
+    }
+
+    .content img {
+        width: 50%;
+        margin: 0;
+    }
+
+    .content .leftimg {
+        padding-right: 1rem;
+    }
+
+    .content .rightimg {
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .social li {
+        margin-right: 1.5rem;
+    }
+
+    .footer h1 {
+        font-size: 3rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

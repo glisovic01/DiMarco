@@ -1,0 +1,119 @@
+.navbar {
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: 5%;
+}
+
+.nav-links {
+    flex: 1;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-links ul li:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    border-radius: 2px;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transition-property: width, left;
+    transition-property: width, left;
+}
+
+.nav-links ul li:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.navbar .fa {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .nav-links ul li:after {
+        background: transparent;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .nav-links {
+        position: fixed;
+        padding-top: 10px;
+        margin-right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        height: 100vh;
+        width: 400px;
+        font-size: 1.3rem;
+        top: 0;
+        right: -70vw;
+        text-align: left;
+        z-index: 2;
+        transition: ease 0.5s;
+    }
+
+    .navbar {
+        padding: 25px 0;
+    }
+
+    .navbar .fa {
+        display: block;
+        color: #fff;
+        margin: 10px 20px;
+        font-size: 35px;
+    }
+
+    .logo {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 720px) {
+    .nav-links {
+        width: 70vw;
+    }
+}
