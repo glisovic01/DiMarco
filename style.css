@@ -143,6 +143,7 @@ body {
     min-width: 200px;
     max-width: 400px;
     margin-top: -2rem;
+    margin-bottom: 1rem;
 }
 
 .content .leftimg {
