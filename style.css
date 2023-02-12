@@ -139,6 +139,8 @@ body {
 
 .content img {
     width: 20%;
+    min-width: 200px;
+    max-width: 400px;
     margin-top: -2rem;
 }
 
@@ -229,7 +231,7 @@ footer {
     }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 600px) {
     * {
         overflow-x: hidden;
     }
@@ -285,17 +287,18 @@ footer {
     }
 
     .content img {
-        width: 50%;
-        margin: 0;
+        margin: 0 10% 2rem;
+        width: 80%;
     }
-
+      
     .content .leftimg {
-        padding-right: 1rem;
+        float: none;
+        padding: 0;
     }
-
+      
     .content .rightimg {
-        padding-left: 1rem;
-        padding-bottom: 1rem;
+        float: none;
+        padding: 0;
     }
 
     .social li {
