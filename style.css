@@ -104,7 +104,8 @@ body {
     padding-top: 5rem;
     padding-bottom: 1rem;
     color: #fff;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
 }
 
 .content h1 {
