@@ -67,7 +67,7 @@
     display: none;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1060px) {
     .nav-links ul li:after {
         background: transparent;
     }
