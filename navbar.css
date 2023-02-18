@@ -63,6 +63,33 @@
     left: 0%;
 }
 
+.nav-links ul li [aria-current="page"] {
+    position: relative;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transition-property: color;
+    transition-property: color;
+  }
+  
+  .nav-links ul li [aria-current="page"]:after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 2px;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transition-property: width, left;
+    transition-property: width, left;
+  }
+
 .navbar .fa {
     display: none;
 }
