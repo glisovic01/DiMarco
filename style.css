@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 1);
   border-radius: 100vw;
   margin-block: 0.5rem;
 }
