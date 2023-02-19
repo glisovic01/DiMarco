@@ -445,6 +445,10 @@ footer {
         margin-left: 0.5rem;
     }
 
+    .gap span:first-child{
+        display: inline;
+      }
+
     .social li {
         margin-right: 1.5rem;
     }
