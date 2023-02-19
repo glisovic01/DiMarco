@@ -248,13 +248,68 @@ body {
 .gap {
     text-align: center;
     letter-spacing: 4px;
-    margin-left: 4rem;
+    margin-left: 15%;
     margin-bottom: 2.5rem;
 }
   
 .gap img {
     width: 50px;
     margin-left: 1rem;
+}
+
+.dostava {
+    color: white;
+    position: relative;
+    min-height: 100vh;
+}
+  
+.da-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+  
+.da-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 500px;
+    margin-block: 5rem;
+    padding-block: 3rem;
+    gap: 5rem;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+}
+  
+.da-content h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+  
+.da-content p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+  
+.da-content-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 2rem;
+}
+  
+.da-content-images {
+    display: flex;
+    gap: 2rem;
+}
+  
+.da-content img {
+    width: 200px;
+    border-radius: 50%;
 }
 
 .footer {
@@ -291,16 +346,18 @@ body {
 
 .social li a {
     display: inline-block;
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
     opacity: 0.4;
 }
 
 .social li a:hover {
     opacity: 1;
-    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
 }
+
+.social li a img {
+    width: 70px;
+  }
 
 footer {
     font-size: 1.2rem;
@@ -450,8 +507,33 @@ footer {
         display: inline;
       }
 
+    .da-head {
+        gap: 1rem;
+        margin-block: 1rem;
+    }
+    
+    .da-head img {
+        flex: 1;
+    }
+    
+    .da-content {
+        padding-inline: 1rem;
+    }
+    
+    .da-content-images img {
+        width: 150px;
+    }
+    
+    .da-content p {
+        font-size: 1.3rem;
+    }
+
     .social li {
         margin-right: 1.5rem;
+    }
+
+    .social li a:hover {
+        transform: scale(1);
     }
 
     .footer h1 {
