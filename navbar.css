@@ -65,15 +65,9 @@
 
 .nav-links ul li [aria-current="page"] {
     position: relative;
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    -webkit-transition-duration: 400ms;
-    transition-duration: 400ms;
-    -webkit-transition-property: color;
-    transition-property: color;
   }
   
-  .nav-links ul li [aria-current="page"]:after {
+.nav-links ul li [aria-current="page"]:after {
     content: "";
     height: 3px;
     width: 100%;
@@ -82,13 +76,7 @@
     left: 0;
     bottom: -6px;
     border-radius: 2px;
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    -webkit-transition-duration: 400ms;
-    transition-duration: 400ms;
-    -webkit-transition-property: width, left;
-    transition-property: width, left;
-  }
+}
 
 .navbar .fa {
     display: none;
@@ -112,7 +100,9 @@
         position: fixed;
         padding-top: 10px;
         margin-right: 0;
-        background: rgba(0, 0, 0, 0.95);
+        background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75));
+        backdrop-filter: blur(1rem);
+        -webkit-backdrop-filter: blur(1rem);
         height: 100vh;
         width: 400px;
         font-size: 1.3rem;

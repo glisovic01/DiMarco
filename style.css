@@ -200,7 +200,6 @@ body {
     text-transform: uppercase;
     font-size: 1.7rem;
     font-weight: 500;
-    margin-bottom: 1.8rem;
 }
   
 .kartica {
@@ -211,35 +210,39 @@ body {
     -webkit-backdrop-filter: blur(1rem);
 }
   
-  .kartica:nth-child(1) {
+.kartica:nth-child(1) {
     grid-row: 1/3;
-  }
+}
   
-  .kartica:nth-child(6) {
+.kartica:nth-child(6) {
     grid-row: 4/6;
-  }
+}
   
-  .kartica p:nth-child(odd) {
+.kartica p:nth-child(odd) {
     text-transform: uppercase;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-  }
+}
   
-  .kartica p:nth-child(even) {
+.kartica p:nth-child(even) {
     text-align: right;
     color: rgb(170, 170, 170);
     padding-left: 40%;
     margin-bottom: 1rem;
     font-size: 1rem;
-  }
+}
   
-  .gap {
+.gap {
     text-align: center;
+    letter-spacing: 5px;
+    margin-left: 4rem;
     margin-bottom: 2.5rem;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-  }
+}
   
+.gap img {
+    width: 50px;
+    margin-left: 1rem;
+}
 
 .footer {
     width: 100%;
@@ -324,7 +327,7 @@ footer {
     }
 
     .header {
-        height: 900px;
+        min-height: 900px;
     }
 
     .headline {
@@ -385,7 +388,7 @@ footer {
 
     .jk-head {
         gap: 1rem;
-        margin: 1rem;
+        margin-block: 1rem;
     }
     
     .jk-head img {
@@ -409,6 +412,10 @@ footer {
         margin-inline: 1rem;
         grid-template-columns: 1fr;
     }
+
+    .jk-content h2 {
+        font-size: 1.5rem;
+    }
     
     .kartica:nth-child(1) {
         grid-row: auto;
@@ -416,6 +423,20 @@ footer {
       
     .kartica:nth-child(6) {
         grid-row: auto;
+    }
+
+    .kartica p:nth-child(odd) {
+        font-size: 1rem;
+    }
+
+    .gap {
+        letter-spacing: 2px;
+        margin-left: 2.7rem;
+    }
+    
+    .gap img {
+        width: 40px;
+        margin-left: 0.5rem;
     }
 
     .social li {
