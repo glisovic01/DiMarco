@@ -4,6 +4,21 @@
     font-family: 'Rubik', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 100vw;
+  margin-block: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 100vw;
+}
+
 html {
     scroll-behavior: smooth;
 }
