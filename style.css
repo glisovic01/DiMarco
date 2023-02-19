@@ -10,12 +10,10 @@
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 1);
-  border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #fff;
-  border-radius: 100vw;
 }
 
 html {
