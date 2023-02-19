@@ -234,7 +234,7 @@ body {
   
 .gap {
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     margin-left: 4rem;
     margin-bottom: 2.5rem;
 }
@@ -281,30 +281,12 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 70px;
-    border: 1px solid white;
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .social li a:hover {
     opacity: 1;
-}
-
-.social .facebook {
-    background: url(https://dimarcopizza.rs/img/facebook.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 2px 2px 4px #000000;
-}
-
-.social .twitter {
-    background: url(https://dimarcopizza.rs/img/twitter.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 2px 2px 4px #000000;
-}
-
-.social .mail {
-    background: url(https://dimarcopizza.rs/img/mail.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 2px 2px 4px #000000;
+    transition: all 0.2s ease-in-out;
 }
 
 footer {
@@ -317,13 +299,25 @@ footer {
     }
 }
 
+@media (max-width: 1500px) {
+    .jk-content {
+      margin-inline: 13%;
+    }
+    .gap {
+      margin-left: 10%;
+      letter-spacing: 3px;
+    } 
+  }
+  
+  @media (max-width: 1200px) {
+    .gap span:first-child{
+      display: none;
+    }
+  }
+
 @media(max-width: 600px) {
     * {
         overflow-x: hidden;
-    }
-
-    body {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(img/mobile_background.jpg);
     }
 
     .header {
