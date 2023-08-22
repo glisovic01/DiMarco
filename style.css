@@ -315,13 +315,12 @@ body {
 
 .footer {
     width: 100%;
-    margin: 2rem auto 1rem;
+    margin: 2.5rem auto 1rem;
     color: #fff;
     text-align: center;
 }
 
 .social {
-    margin-top: 1rem;
     margin-bottom: 3.5rem;
 }
 
