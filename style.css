@@ -321,7 +321,7 @@ body {
 }
 
 .social {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 .social ul {
@@ -331,7 +331,7 @@ body {
 
 .social li {
     display: inline-block;
-    margin-right: 5rem;
+    margin-right: 3.5rem;
 }
 
 .social li:last-child {
